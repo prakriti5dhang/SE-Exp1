@@ -1,0 +1,81 @@
+/*
+Lab: 
+Exp:
+File Name: main.css
+Author: Prakriti Dhang */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+
+}
+
+.target>div {
+  display: none;
+}
+
+.target>div:target {
+  display: block;
+}
+
+
+
+ /* .nav-link {
+  color: rgb(56, 23, 245);
+  font-weight: bold;
+}  */
+
+
+.navbar-custom {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-brand {
+  color: black;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: rgb(17, 117, 248);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  
+  text-decoration: underline;
+}
+
+.navbar-custom .navbar-nav .nav-item .nav-link.active {
+  color: rgb(255, 119, 7);
+}
+
+/*code to change background color
+.navbar-nav>.active>a {
+  background-color: #C0C0C0;
+  color: rgb(0, 0, 0);
+}*/
+
+/*
+li a
+{
+    display: block;
+    color: rgb(0, 112, 240);
+   
+    
+
+}*/
+
+/*li a:hover:not(.active) 
+{
+ color: #0312e7;
+}
+
+li a:focus
+{
+    color: #EAB126;
+ 
+}*/

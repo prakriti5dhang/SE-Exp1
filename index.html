@@ -1,0 +1,334 @@
+<!--
+Lab: 
+Exp:
+File Name: index.html
+Author: Prakriti Dhang -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/exp-main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="container-fluid p-3">
+          <div class="card">
+          <div class="row">
+            <div class="col-md-2">
+            <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+          </div>
+          <div class="col-md-8 p-4">
+            <p class="h4 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+          </div>
+          <div class="col-md-2">
+            <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+          </div>
+          </div>
+        </div>
+        </div>
+      </header>
+
+      <div class="container-fluid p-2">
+        <hr>
+        <p class="h4 fw-bold fst-italic text-center" style="color: #000283;"> Identifying the Requirements from Problem Statements</p>
+        <hr>
+    </div>
+
+    <div class="container-fluid mt-1 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3 ">  
+            <div class="row">
+                <div class="col-md-12 ">
+                  <nav class="navbar navbar-expand-lg navbar-custom  justify-content-center">
+                    <div class="container-fluid">
+                     
+                      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  ">
+                          <li class="nav-item fs-5">
+                            <a class="nav-link " aria-current="page" href="#aim">Introduction</a>
+                          </li>
+                          <!--li class="nav-item fs-5">
+                            <a class="nav-link" href="#expname">Experiment Name</a>
+                          </li-->
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" href="#theory">Theory</a>
+                          </li>
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" target="_blank" href="#simulation">Simulation</a>
+                          </li>
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" href="#preq">Case Study</a>
+                          </li>
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" href="#postq">Self Evaluation</a>
+                          </li>
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" href="#procedure">Procedure</a>
+                          </li>
+
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" target="_blank" href="#exer">Exercises</a>
+                          </li>
+
+                         
+                          <li class="nav-item fs-5">
+                            <a class="nav-link" href="#ref">References</a>
+                          </li>
+
+                          
+                        </ul>
+                  
+                    </div>
+                  </div>
+                  </nav>
+                </div>
+                </div>
+                <hr>
+                <div class="row">
+                <div class="col-md-12 target">
+
+<div id="aim" class="card card-body  border border-0" >
+  <h4> Introduction</h4>
+  <p>Requirements identification is the first step of any software development project. 
+    Until the requirements of a client have been clearly identified, and verified, no other task (design, coding, testing)
+     could begin. Usually business analysts having domain knowledge on the subject matter discuss with clients and decide
+      what features are to be implemented.</p>
+
+    <p>In this experiment we will learn how to identify functional and non-functional requirements from a given 
+      problem statement. Functional and non-functional requirements are the primary components of a Software Requirements
+       Specification.</p>
+</div>
+
+<!--div id="expname" class="card card-body  border border-0" >
+  <p  class="fs-4 fw-bold"> Name of the Experiment</p>
+</div-->
+
+<div id="theory" class="card card-body  border border-0" >
+  <h4 id="objecttive">Objective</h4>
+<p><strong>After completing this experiment you will be able to:</strong></p>
+<ul>
+<li>Identify ambiguities, inconsistencies and incompleteness from a requirements specification</li>
+<li>Identify and state functional requirements</li>
+<li>Identify and state non-functional requirements</li>
+</ul>
+<h3 id="theory">Theory</h3>
+<h4 id="requirements">Requirements</h4>
+<p>Sommerville defines &quot;requirement&quot; as a specification of what should be implemented. Requirements specify how the target system should behave. It specifies what to do, but not how to do. Requirements engineering refers to the process of understanding what a customer expects from the system to be developed, and to document them in a standard and easily readable and understandable format. This documentation will serve as reference for the subsequent design, implementation and verification of the system.</p>
+<p>It is necessary and important that before we start planning, design and implementation of the software system for our client, we are clear about it&#39;s requirements. If we don&#39;t have a clear vision of what is to be developed and what all features are expected, there would be serious problems, and customer dissatisfaction as well.</p>
+<h4 id="characteristics-of-requirements">Characteristics of Requirements</h4>
+<p>Requirements gathered for any new system to be developed should exhibit the following three properties:</p>
+<ul>
+<li><strong>Unambiguity:</strong> There should not be any ambiguity what a system to be developed should do. For example, consider you are developing a web application for your client. The client requires that enough number of people should be able to access the application simultaneously. What&#39;s the &quot;enough number of people&quot;? That could mean 10 to you, but, perhaps, 100 to the client. There&#39;s an ambiguity.</li>
+<li><strong>Consistency:</strong> To illustrate this, consider the automation of a nuclear plant. Suppose one of the clients say that it the radiation level inside the plant exceeds R1, all reactors should be shut down. However, another person from the client side suggests that the threshold radiation level should be R2. Thus, there is an inconsistency between the two end users regarding what they consider as threshold level of radiation.</li>
+<li><strong>Completeness:</strong> A particular requirement for a system should specify what the system should do and also what it should not. For example, consider a software to be developed for ATM. If a customer enters an amount greater than the maximum permissible withdrawal amount, the ATM should display an error message, and it should not dispense any cash.</li>
+</ul>
+<h4 id="categorization-of-requirements">Categorization of Requirements</h4>
+<p>Based on the target audience or subject matter, requirements can be classified into different types, as stated below:</p>
+<ul>
+<li><strong>User requirements:</strong> They are written in natural language so that both customers can verify their requirements have been correctly identified</li>
+<li><strong>System requirements:</strong> They are written involving technical terms and/or specifications, and are meant for the development or testing teams</li>
+</ul>
+<p>Requirements can be classified into two groups based on what they describe:</p>
+<ul>
+<li><strong>Functional requirements (FRs):</strong> These describe the functionality of a system -- how a system should react to a particular set of inputs and what should be the corresponding output.</li>
+<li><strong>Non-functional requirements (NFRs):</strong> They are not directly related what functionalities are expected from the system. However, NFRs could typically define how the system should behave under certain situations. For example, a NFR could say that the system should work with 128MB RAM. Under such condition, a NFR could be more critical than a FR.</li>
+</ul>
+<p>Non-functional requirements could be further classified into different types like:</p>
+<ul>
+<li><strong>Product requirements:</strong> For example, a specification that the web application should use only plain HTML, and no frames</li>
+<li><strong>Performance requirements:</strong> For example, the system should remain available 24x7</li>
+<li><strong>Organizational requirements:</strong> The development process should comply to SEI CMM level 4</li>
+</ul>
+<h4 id="functional-requirements">Functional Requirements</h4>
+<h6 id="-identifying-functional-requirements-"><strong>Identifying Functional Requirements</strong></h6>
+<p>Given a problem statement, the functional requirements could be identified by focusing on the following points:</p>
+<ul>
+<li>Identify the high level functional requirements simply from the conceptual understanding of the problem. For example, a Library Management System, apart from anything else, should be able to issue and return books.</li>
+<li>Identify the cases where an end user gets some meaningful work done by using the system. For example, in a digital library a user might use the &quot;Search Book&quot; functionality to obtain information about the books of his interest.</li>
+<li>If we consider the system as a black box, there would be some inputs to it, and some output in return. This black box defines the functionalities of the system. For example, to search for a book, user gives title of the book as input and get the book details and location as the output.</li>
+<li>Any high level requirement identified could have different sub-requirements. For example, &quot;Issue Book&quot; module could behave differently for different class of users, or for a particular user who has issued the book thrice consecutively.</li>
+</ul>
+<h5 id="preparing-software-requirements-specifications">Preparing Software Requirements Specifications</h5>
+<p>Once all possible FRs and non-FRs have been identified, which are complete, consistent, and non-ambiguous, the Software Requirements Specification (SRS) is to be prepared. IEEE provides a template [4], also available here, which could be used for this purpose. The SRS is prepared by the service provider, and verified by its client. This document serves as a legal agreement between the client and the service provider. Once the concerned system has been developed and deployed, and a proposed feature was not found to be present in the system, the client can point this out from the SRS. Also, if after delivery, the client says a new feature is required, which was not mentioned in the SRS, the service provider can again point to the SRS. The scope of the current experiment, however, doesn&#39;t cover writing a SRS.</p>
+
+</div>
+
+<div id="preq" class="card card-body  border border-0">
+  <h2 id="case-study">Case Study</h2>
+<h3 id="1-a-library-information-system-for-se-vlabs-institute">1 : A Library Information System for SE VLabs Institute</h3>
+<p>The SE VLabs Institute has been recently setup to provide state-of-the-art research facilities in the field of Software Engineering. Apart from research scholars (students) and professors, it also includes quite a large number of employees who work on different projects undertaken by the institution.</p>
+<p>As the size and capacity of the institute is increasing with the time, it has been proposed to develop a Library Information System (LIS) for the benefit of students and employees of the institute. LIS will enable the members to borrow a book (or return it) with ease while sitting at his desk/chamber. The system also enables a member to extend the date of his borrowing if no other booking for that particular book has been made. For the library staff, this system aids them to easily handle day-to-day book transactions. The librarian, who has administrative privileges and complete control over the system, can enter a new record into the system when a new book has been purchased, or remove a record in case any book is taken off the shelf. Any non-member is free to use this system to browse/search books online. However, issuing or returning books is restricted to valid users (members) of LIS only.</p>
+<p>The final deliverable would a web application (using the recent HTML 5), which should run only within the institute LAN. Although this reduces security risk of the software to a large extent, care should be taken no confidential information (eg., passwords) is stored in plain text.</p>
+<p><strong>Identification of functional requirements</strong></p>
+<p>The above problem statement gives a brief description of the proposed system. From the above, even without doing any deep analysis, we might easily identify some of the basic functionality of the system:</p>
+<ul>
+<li><p><strong>New user registration:</strong> Any member of the institute who wishes to avail the facilities of the library has to register himself with the Library Information System. On successful registration, a user ID and password would be provided to the member. He has to use this credentials for any future transaction in LIS.</p>
+</li>
+<li><p><strong>Search book:</strong> Any member of LIS can avail this facility to check whether any particular book is present in the institute&#39;s library. A book could be searched by its:</p>
+<ul>
+<li>Title</li>
+<li>Authors name</li>
+<li>Publisher&#39;s name</li>
+</ul>
+</li>
+<li><p><strong>User login:</strong> A registered user of LIS can login to the system by providing his employee ID and password as set by him while registering. After successful login, &quot;Home&quot; page for the user is shown from where he can access the different functionalities of LIS: search book, issue book, return book, reissue book. Any employee ID not registered with LIS cannot access the &quot;Home&quot; page -- a login failure message would be shown to him, and the login dialog would appear again. This same thing happens when any registered user types in his password wrong. However, if incorrect password has been provided for three time consecutively, the security question for the user (specified while registering) with an input box to answer it are also shown. If the user can answer the security question correctly, a new password would be sent to his email address. In case the user fails to answer the security question correctly, his LIS account would be blocked. He needs to contact with the administrator to make it active again.</p>
+</li>
+<li><p><strong>Issue book:</strong> Any member of LIS can issue a book against his account provided that:</p>
+<ul>
+<li>The book is available in the library i.e. could be found by searching for it in LIS</li>
+<li>No other member has currently issued the book</li>
+<li>Current user has not issued the maximum number of books that can</li>
+</ul>
+</li>
+</ul>
+<p>If the above conditions are met, the book is issued to the member.
+Note that this FR would remain <strong>incomplete</strong> if the &quot;maximum number of books that can be issued to a member&quot; is not defined. We assume that this number has been set to four for students and research scholars, and to ten for professors.
+Once a book has been successfully issued, the user account is updated to reflect the same.</p>
+<ul>
+<li><strong>Return book:</strong> A book is issued for a finite time, which we assume to be a period of 20 days. That is, a book once issued should be returned within the next 20 days by the corresponding member of LIS. After successful return of a book, the user account is updated to reflect the same.</li>
+<li><strong>Reissue book:</strong> Any member who has issued a book might find that his requirement is not over by 20 days. In that case, he might choose to reissue the book, and get the permission to keep it for another 20 days. However, a member can reissue any book at most twice, after which he has to return it. Once a book has been successfully reissued, the user account is updated to reflect the information.</li>
+</ul>
+<p>In a similar way we can list other functionality offered by the system as well. However, certain features might not be evident directly from the problem system, but which, nevertheless, are required. One such functionality is &quot;User Verification&quot;. The LIS should be able to judge between a registered and non-registered member. Most of the functionality would be available to a registered member. The &quot;New User Registration&quot; would, however, be available to non-members. Moreover, an already registered user shouldn&#39;t be allowed to register himself once again.</p>
+<p>Having identified the (major) functional requirements, we assign an identifier to each of them [v] for future reference and verification. Following table shows the list:</p>
+<p> Table 01: Identifier and priority for software requirements
+No. | Requirement |Priority 
+:--|:--|:--|
+R1 | New User Registration | High
+R2 | User Login | High
+R3 | Search Book | High
+R4 | Issue Book | High
+R5 | Retrun Book | High
+R6 | Reissue Book | High</p>
+<h3 id="identification-of-non-functional-requirements">Identification of non-functional requirements</h3>
+<p>Having talked about functional requirements, let&#39;s try to identify a few non-functional requirements.</p>
+<ul>
+<li><strong>Performance Requirements:</strong><ul>
+<li>This system should remain accessible 24x7</li>
+<li>At least 50 users should be able to access the system altogether at any given time</li>
+</ul>
+</li>
+<li><strong>Security Requirements:</strong><ul>
+<li>This system should be accessible only within the institute LAN</li>
+<li>The database of LIS should not store any password in plain text -- a hashed value has to be stored</li>
+</ul>
+</li>
+<li><strong>Software Quality Attributes</strong></li>
+<li><strong>Database Requirements</strong></li>
+<li><strong>Design Constraints:</strong><ul>
+<li>The LIS has to be developed as a web application, which should work with Firefox 5, Internet Explorer 8, Google Chrome 12, Opera 10</li>
+<li>The system should be developed using HTML 5</li>
+</ul>
+</li>
+</ul>
+<p>Once all the functional and non-functional requirements have been identified, they are documented formally in SRS, which then serves as a legal agreement.</p>
+
+</div>
+<div id="simulation" class="card card-body  border border-0">
+  <iframe src="./simulation.html" title="" width="100%" height="1200"></iframe>
+</div>
+<div id="postq" class="card card-body  border border-0" >
+  <p  class="fs-4 fw-bold"> Self Evaluation</p>
+</div>
+<div id="procedure" class="card card-body  border border-0" >
+ 
+<h5 id="steps-for-conducting-the-experiment">Steps for conducting the experiment</h5>
+<h5 id="-general-instructions-"><strong>General Instructions</strong></h5>
+<p>Follow are the steps to be followed in general to perform the experiments in <strong>Software Engineering Virtual Lab.</strong></p>
+<ol>
+<li>Read the theory about the experiment</li>
+<li>View the simulation provided for a chosen, related problem</li>
+<li>Take the self evaluation to judge your understanding (optional, but recommended)</li>
+<li>Solve the given list of exercises</li>
+</ol>
+<h5 id="-experiment-specific-instructions-"><strong>Experiment Specific Instructions</strong></h5>
+<p>Following are the instructions specifically for this experiment:</p>
+<ol>
+<li>From the given problem statement, try to figure out if there&#39;s any inconsistency with the requirement specification</li>
+<li>Also, try to determine what are the functional and non-functional requirements are</li>
+<li>Select the check boxes accordingly, and then click on the &#39;Submit&#39; button</li>
+</ol>
+<h4 id="identification-of-non-functional-requirements">Identification of non-functional requirements</h4>
+<p>Having talked about functional requirements, let&#39;s try to identify a few non-functional requirements.</p>
+<ul>
+<li><strong>Performance Requirements:</strong><ul>
+<li>This system should remain accessible 24x7</li>
+<li>At least 50 users should be able to access the system altogether at any given time</li>
+</ul>
+</li>
+<li><strong>Security Requirements:</strong><ul>
+<li>This system should be accessible only within the institute LAN</li>
+<li>The database of LIS should not store any password in plain text -- a hashed value has to be stored</li>
+</ul>
+</li>
+<li><strong>Software Quality Attributes</strong></li>
+<li><strong>Database Requirements</strong></li>
+<li><strong>Design Constraints:</strong><ul>
+<li>The LIS has to be developed as a web application, which should work with Firefox 5, Internet Explorer 8, Google Chrome 12, Opera 10</li>
+<li>The system should be developed using HTML 5</li>
+</ul>
+</li>
+</ul>
+<p>Once all the functional and non-functional requirements have been identified, they are documented formally in SRS, which then serves as a legal agreement.</p>
+
+</div>
+<div id="exer" class="card card-body  border border-0">
+  <iframe src="./exercise_index.html" title="" width="100%" height="1200"></iframe>
+</div>
+
+<div id="ref" class="card card-body  border border-0" >
+  <h3 id="references">References</h3>
+  <p>Following books and websites have been consulted for this experiment.
+  You are suggested to go through them for further details.</p>
+  <h5 id="books">Books</h5>
+  <ul>
+  <li>Requirements Engineering: A Good Practice Guide, Ian Sommerville, Pete Sawyer, Wiley India Pvt Ltd, 2009</li>
+  <li>Fundamentals of Software Engineering, Rajib Mall, Prentice-Hall of India, 3rd Edition, 2009</li>
+  </ul>
+  <h5 id="papers">Papers</h5>
+  <ol>
+  <li>Lecture on &quot;System Analysis and Design&quot;, NPTEL</li>
+  <li><a href="https://www.processimpact.com/articles/telepathy.pdf">When Telepathy Won’t Do: Requirements Engineering Key Practices</a></li>
+  <li><a href="https://www.outsource2india.com/software/RequirementAnalysis.asp">Requirements Analysis: Process of requirements gathering and requirement definition</a></li>
+  <li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=720574&amp;userType=inst&amp;tag=1">IEEE Recommended Practice for Software Requirements Specifications</a></li>
+  <li>Requirements Trace-ability and Use Cases</li>
+  </ol>
+  
+</div>
+
+
+               </div>
+                
+            </div>
+            
+        </div>
+            </div>
+
+
+            <div class="container-fluid p-1 ">
+              <hr>
+            <footer class="text-white text-center" >
+              
+                <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+             
+            </footer>
+            <hr>
+            </div>
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/exp-main.js"></script>
+   
+</body>
+</html>

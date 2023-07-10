@@ -1,0 +1,373 @@
+<!--Redeveloped
+Lab: Software Engineering
+Exp:Identifying the Requirements from Problem Statements
+File Name: exercise_index.html
+Author: Prakriti Dhang -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body >
+  <!--header id="header">
+    <div class="container-fluid p-3">
+      <div class="card">
+      <div class="row">
+        <div class="col-md-2">
+        <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+      </div>
+      <div class="col-md-8 p-4">
+        <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+      </div>
+      <div class="col-md-2">
+        <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+      </div>
+      </div>
+    </div>
+    </div>
+  </header-->
+  <!--div class="container-fluid p-2">
+    <hr>
+    <p class="h3 fw-bold fst-italic text-center" style="color: #000283;"> Identifying the Requirements from Problem Statements</p>
+    <hr>
+</div-->
+	<div class="container-fluid mt-3 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3">  
+				
+
+<div class="card border border-2 border-primary p-2">
+  <div class="card-body">
+	<label class="form-label fw-bold">Select a problem from the dropdown list shown below</label>
+   <select id="selectex" class="form-select float-center border border-2 border-primary" aria-label="Default select example" onchange="subex()">
+  <option value="0" selected>Exercise #</option>
+  <option value="1">Exercise 1</option>
+  <option value="2">Exercise 2</option>
+  <option value="3">Exercise 3</option>
+</select>
+<br>
+<!--button type="button" class="btn btn-primary" id="subex" disabled>Submit</button-->
+  </div> <!-- card body ended for exercise selection-->
+</div> <!-- card ended for exercise selection -->
+
+			
+		<!--/div-->
+  
+
+			
+
+				<div class="card border border-2 border-info p-1" id="exercise" style="display:none;">
+  <div class="card-body">
+	<label for="prob1" class="form-label" style="color: brown; font-weight: bold;">Consider the problem statement for an "Online Auction System" to be developed:</label>
+   <p style="text-align: justify;">New users can register to the system through an online process. By registering a user agrees to abide by different pre-defined terms and conditions as specified by the system. Any registered user can access the different features of the system authorized to him / her, after he authenticates himself through the login screen. An authenticated user can put items in the system for auction. Authenticated users users can place bid for an item. Once the auction is over, the item will be sold to the user placing the maximum bid. Payments are to be made by third party payment services, which, of course, is guaranteed to be secure. The user selling the item will be responsible for it's shipping. If the seller thinks he's getting a good price, he can, however, sell the item at any point of time to the maximum bidder available.</p>
+ <h6 class="fw-bold">Learning Objectives:</h6>  
+ <ul>
+	<li id="lo1" style="display: none;">Learn about the three different aspects that have to be taken care of while writing requirements specification
+</li>
+<li id="lo2" style="display: none;">Identifying different functionaries to be obtained from a system.
+</li>
+<li id="lo3" style="display: none;">Identifying characteristics that a system should have, but not done by the system itself.
+</li>
+ </ul>
+<p id="lim2" style="display: none;">Limitations: This list is in no way complete; exercise #4 would address this again </p>  
+</div> <!-- card body ended for exercise problem statement-->
+</div> <!-- card ended for exercise problem statement-->
+
+			
+	
+	<!-----------------------------Exercise 1 --------------------------->
+
+<div class="card border border-2 border-success p-1" id="ex1" style="display:none;">
+  <div class="card-body">
+	<form id="exer11"  class=" bg-white " action="">
+    <p class="fw-bold" style="color: brown">Following are the ambiguities</p>
+	
+  <div id="optiona1" class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="opt11" onchange="chnga1()">
+  <label class="form-check-label" for="opt11">
+    None
+  </label>
+</div>
+<div id="optionb1" class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="opt12" >
+  <label class="form-check-label" for="opt12">
+    There's no specification when an auction gets over
+  </label>
+</div>
+<div id="optionc1" class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="opt13" onchange="chngc1()">
+  <label class="form-check-label" for="opt13">
+    It doesn't say who are registered users 
+  </label>
+</div>
+<div id="optiond1" class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="opt14" onchange="chngd1()">
+  <label class="form-check-label" for="opt14">
+     No mention about what technology to be used for developing the application
+  </label>
+</div>
+</form>
+ <br>
+<form id="exer12" class=" bg-white " action="">
+    <p class="fw-bold" style="color: brown;">Following are the inconsistencies</p>
+    <div id="optiona21" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt21" onchange="chnga21()"/>
+      <label class="form-check-label" for="opt21">
+        None
+      </label>
+    </div>
+    <div id="optionb21" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt22" />
+      <label class="form-check-label" for="opt22">
+        An item is said to be sold to the max bidder after auction is over; it can also be sold before the auction is over
+      </label>
+    </div>
+    <div id="optionc21" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt23" onchange="chngc21()" />
+      <label class="form-check-label" for="opt23">
+        A registered user seems could be both buyer and seller
+      </label>
+    </div>
+  </form>
+  <br>
+  <form  id="exer13" class=" bg-white " action="">
+    <p class="fw-bold" style="color: brown;">The problem statement is incomplete because</p>
+    <div id="optiona31" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt31" onchange="chnga31()" />
+      <label class="form-check-label" for="opt31">
+        None
+      </label>
+    </div>
+    <div id="optionb31" id="optionc1" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt32" onchange="chngb31()"/>
+      <label class="form-check-label" for="opt32">
+        No mention of how a new user registers 
+      </label>
+    </div>
+    <div id="optionc31" id="optionc1" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt33" onchange="chngc31()"/>
+      <label class="form-check-label" for="opt33">
+        No mention of any dispute regarding the sold product 
+      </label>
+    </div>
+	<div id="optiond31" id="optionc1" class="form-check mb-2">
+      <input class="form-check-input" type="checkbox" name="exampleForm" id="opt34" onchange="chngd31()" />
+      <label class="form-check-label" for="opt34">
+        No mention of what kind of products could be put on auction 
+      </label>
+    </div>
+  </form> <!-- form ended for exercise 1-->
+<br>
+  <div class="text-center">
+	<button type="button" class="btn btn-warning" id="res1" onclick="reset1()">Reset</button>
+    <button type="button" class="btn btn-primary" id="sub1" onclick="sub1()">Submit</button>
+  </div>
+</div>  <!-- card body ended for exercise 1-->
+</div> <!-- card ended for exercise 1-->
+
+<!-----------------------------Exercise 1 complete --------------------------->
+<!-----------------------------Exercise 2 --------------------------->
+
+<div class="card  border border-2 border-success p-1" id="ex2" style="display:none;">
+	<div class="card-body">
+	  <form id="exer21"class=" bg-white " action="">
+	  <p class="fw-bold" style="color: brown;">Following functional requirements could be obtained from the requirements specifications</p>
+	  
+	<div id="optiona12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21a">
+	<label class="form-check-label" for="opt21a">
+		Registration: New users have to register themselves online with the site and accept its terms & conditions 
+	</label>
+  </div>
+  <div id="optionb12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21b" >
+	<label class="form-check-label" for="opt21b">
+		User Login: A user has to login into the site using his correct user ID & password
+	</label>
+  </div>
+  <div id="optionc12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21c" >
+	<label class="form-check-label" for="opt21c">
+		Upload Item for Auction: An authenticated user can upload an item into the site, which is to be put on auction subsequently  
+	</label>
+  </div>
+  <div id="optiond12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21d" >
+	<label class="form-check-label" for="opt21d">
+		Auction Item: User puts an item already uploaded by him ino the site on auction
+	</label>
+  </div>
+  <div id="optione12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21e" onchange="chnge12()">
+	<label class="form-check-label" for="opt21e">
+		Balance Check: Bidder should have enough bank balance to bid 
+	</label>
+  </div>
+  <div id="optionf12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21f" >
+	<label class="form-check-label" for="opt21f">
+		Bid for Item: Any registered & authenticated user of the system could place a bid for an item on auction
+	</label>
+  </div>
+  <div id="optiong12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21g" >
+	<label class="form-check-label" for="opt21g">
+		Win Auction: After the auction is over, the maximum bidder for the item owns the item post payment 
+	</label>
+  </div>
+  <div id="optionh12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21h" >
+	<label class="form-check-label" for="opt21h">
+		Ship Item: Seller of the item ships the item to the auction owner after he (seller) receives the payment
+	</label>
+  </div>
+  <div id="optioni12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21i" onchange="chngi12()">
+	<label class="form-check-label" for="opt21i">
+		Availability: The system should remain up & running before, during and after an auction
+	</label>
+  </div>
+  <div id="optionj12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21j" >
+	<label class="form-check-label" for="opt21j">
+		Remove item: Owner removes an item after uploading it, and doesn't put on auction
+	</label>
+  </div>
+  <div id="optionk12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21k" >
+	<label class="form-check-label" for="opt21k">
+		Remove auctioned item: System automatically removes an item from its inventory after it has been successfully auctioned 
+	</label>
+  </div>
+  <div id="optionl12" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt21l" onchange="chngl12()">
+	<label class="form-check-label" for="opt21l">
+		Site Support: Customer care for the website should provide 24x7 help over phone
+	</label>
+  </div>
+  </form> <!-- form ended for exercise 2-->
+   
+  <br>
+	<div class="text-center">
+	  <button type="button" class="btn btn-warning" id="res1" onclick="reset1()">Reset</button>
+	  <button type="button" class="btn btn-primary" id="sub2" onclick="sub2()">Submit</button>
+	</div>
+  </div> <!-- card body ended for exercise 2-->
+  </div> <!-- card ended for exercise 2-->
+
+<!-----------------------------Exercise 2 complete --------------------------->
+<!-----------------------------Exercise 3 --------------------------------->
+<div class="card border border-2 border-success p-1" id="ex3" style="display:none;">
+	<div class="card-body">
+	  <form id="exer31"class=" bg-white " action="">
+	  <p class="fw-bold" style="color: brown;">Following possible non-functional requirements could be identified from the requirements specifications</p>
+	  
+	<div id="optiona13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31a" onchange="chnga13()">
+	<label class="form-check-label" for="opt31a">
+		The system provides option for online registration of new users  
+	</label>
+  </div>
+  <div id="optionb13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31b" >
+	<label class="form-check-label" for="opt31b">
+		The system should remain up & running throughout it's working hours 
+	</label>
+  </div>
+  <div id="optionc13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31c" onchange="chngc13()">
+	<label class="form-check-label" for="opt31c">
+		System automatially removes an item from its database after it has been successfully auctioned  
+	</label>
+  </div>
+  <div id="optiond13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31d" >
+	<label class="form-check-label" for="opt31d">
+		Sessions of different users must not affect each other 
+	</label>
+  </div>
+  <div id="optione13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31e" onchange="chnge13()" >
+	<label class="form-check-label" for="opt31e">
+		Customer care for the website should provide 24x7 help over phone  
+	</label>
+  </div>
+  <div id="optionf13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31f" >
+	<label class="form-check-label" for="opt31f">
+		System should maintain privacy of their users and should not leak their information to third parties
+	</label>
+  </div>
+  <div id="optiong13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31g" >
+	<label class="form-check-label" for="opt31g">
+		System should be able to service 100 users simultaneously  
+	</label>
+  </div>
+  <div id="optionh13" class="form-check">
+	<input class="form-check-input" type="checkbox" value="" id="opt31h" >
+	<label class="form-check-label" for="opt31h">
+		System could remain unavailable for upto 2 hours for maintenance once in a quarter with 36 hour prior notice
+	</label>
+  </div>
+  
+  </form> <!-- form ended for exercise 3-->
+   
+  <br>
+	<div class="text-center">
+	  <button type="button" class="btn btn-warning" id="res1" onclick="reset1()">Reset</button>
+	  <button type="button" class="btn btn-primary" id="sub3" onclick="sub3()">Submit</button>
+	</div>
+  </div> <!-- card body ended for exercise 3-->
+  </div> <!-- card ended for exercise 3-->
+
+<!-----------------------------Exercise 3  complete --------------------------->
+		
+
+
+
+	
+
+
+			
+			
+
+				<div class="card border border-2 border-warning p-1" id="dispres" style="display:none;">
+  <div class="card-body">
+	<label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Result</label>
+   
+ <p class="fs-5" style="color: green; font-weight: bold; font-size: medium;" id="show_result"></p>  
+ 
+
+</div> <!-- card body ended for result display-->
+</div> <!-- card ended for result display-->
+
+			
+			
+		
+  </div> <!-- flex ended-->
+</div> <!-- container-fluid ended-->
+
+<!--div class="container-fluid p-1 ">
+  <hr>
+<footer class="text-white text-center" >
+  
+    <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+ 
+</footer>
+<hr>
+</div-->
+   <!--div class="text-center text-white fs-5 bg-primary" >
+    Copyright © 2023 IIT Kharagpur,
+    <a class="text-white fs-5" href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a>
+  </div-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

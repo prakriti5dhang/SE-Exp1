@@ -1,0 +1,155 @@
+<!--Redeveloped
+Lab: Software Engineering
+Exp:Identifying the Requirements from Problem Statements
+File Name: index.html
+Author: Prakriti Dhang -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+  </head>
+<body>
+    <!--header id="header">
+        <div class="container p-3">
+          <div class="card">
+          <div class="row">
+            <div class="col-md-2">
+            <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+          </div>
+          <div class="col-md-8 p-4">
+            <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+          </div>
+          <div class="col-md-2">
+            <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
+          </div>
+          </div>
+        </div>
+        </div>
+      </header-->
+
+      <!--div class="container p-2">
+        <hr>
+        <p class="h3 fw-bold fst-italic text-center" style="color: #000283;"> Identifying the Requirements from Problem Statements</p>
+        <hr>
+    </div-->
+
+    <div class="container-fluid mt-2 p-3">
+		
+        <div class="d-flex flex-column justify-content-center mb-3 ">  
+            <div class="row">
+                <div class="col-md-6">
+                  
+                   <p class="fs-5 fw-bold" style="color: brown; text-align: justify;">We show here how to extract functional requirements when a problem statement is given. 
+                    The case under study is a online voting system.</p>
+                   <p style="text-align: justify;"> Internet has led to discussion of e-democracy and online voting. Many peoples think that the internet could replace 
+                    representative democracy, enabling everyone to vote on everything and anything by online voting .
+                    Online voting could reduce cost and make voting more convenient. This type of voting can be done for e-democracy, 
+                    or it may be used for finalizing a solution, if many alternatives are present. Online voting make’s use of authentication,
+                     hence it needs security, and the system must be able to address obtaining, marking, delivering and counting ballots via computer. 
+                    Advantage of online voting is it could increase voter turnout because of convenience, and it helps to reduce fraud voting.
+
+
+                   </p>
+               
+                </div>
+               
+                <div class="col-md-6">
+                
+                  <div class="p-2 border-start" >
+                    <div class="card-body">
+                    <!--div class="main"-->
+                    <div  class="card card-body border border-1 border-info" id="p1">
+                        <p class="p-2" style="text-align: justify;" id="para1 " class="fs-5">
+ Internet has led to discussion of e-democarcy and online voting.
+ Many peoples think that the internet could replace representativedemocracy,
+ enabling everyone to vote on everything and anything by online voting.
+ Online voting could reduce cost and make voting more convenient. This type of voting
+ can be done for e-democracy, or it may be used for finalizing a solution, if many alternatives are present. 
+ Online voting <mark id="m1">make's use of authentication</mark>, hence
+ it needs security, and the system <mark id="m2">must be able to address</mark>
+ obtaining, marking, delivering and counting ballots via computer.
+ Advantage of online voting is it could increase voter turnout because of convenience,
+ and it helps to <mark id="m3">reduce fraud voting</mark>. 
+                        </p>
+                      </div>     
+
+ <div class="card card-body p-2" id="pm1"  style="display:none; border:1px solid rgb(1, 68, 250);border-radius: 8px; background: linear-gradient(to bottom, #d3f0f7 0%, #94fcd9 100%);">
+    <p id="d11" class="fs-5" style="display:none; text-align: justify;"> <b>User Registration:</b> A candidate or a user 
+    wishes to vote online has to register with the system by 
+providing his details. His registration has to be verified by admin.</p>
+<p id="d12" class="fs-5" style="display:none; text-align: justify;"> <b>User Login:</b> A user 
+ has to login in order to vote. A candidate can login and 
+view candidate specific details.</p>
+<p id="d13" class="fs-5" style="display:none; text-align: justify;"> <b>Publish manifesto:</b> A candidate can login and publish his election manifesto.</p>
+ </div>
+
+ <div class="card card-body p-2" id="pm2"  style="display:none; border:1px solid rgb(1, 68, 250);border-radius: 8px; background: linear-gradient(to bottom, #d3f0f7 0%, #94fcd9 100%);">
+  <p id="d21" class="fs-5" style="display:none; text-align: justify;"> <b>Vote:</b> A user can cast his vote in favour of a particular candidate.</p>
+  <p id="d22" class="fs-5" style="display:none; text-align: justify;"> <b>Count votes:</b> System must be able to count votes received by each candidate based on polling.</p>
+  <p id="d23" class="fs-5" style="display:none; text-align: justify;"> <b>Publish Results:</b> Administrator can publish polling results at designated time.</p>
+
+</div>
+<div class="card card-body p-2" id="pm3"  style="display:none; border:1px solid rgb(1, 68, 250);border-radius: 8px; background: linear-gradient(to bottom, #d3f0f7 0%, #94fcd9 100%);">
+  <p id="d31" class="fs-5" style="display:none; text-align: justify;"> <b>Prevent Fraud Voting:</b> Only valid users(registered and verified) can 
+  participated in the polling process. </p>
+  <p id="d32" class="fs-5" style="display:none; text-align: justify;"> <b>Only One Vote:</b> A valid user can vote only once.</p>
+</div>
+
+
+<!--/div-->
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center border border-1 border-info p-2 rounded-1" style="background: linear-gradient(to bottom right, #ccffff 0%, #ffffff 99%);">
+                    
+                    <!--button type="button" class="btn btn-info fs-5" onclick="goback()">
+                      <i class="fas fa-step-backward "></i></button-->
+                    <button id="playbtn" type="button" class="btn btn-info fs-5" onclick="playsimulation()"> Click to Play <i class="fas fa-play  "></i></button>
+                    <button id="pausebtn" type="button" class="btn btn-warning fs-5" onclick="pausesimulation()" style="display: none;"> Pause <i class="fas fa-pause "></i></button>
+                    <!--button type="button" class="btn btn-info fs-5" onclick="goforward()"><i class="fas fa-step-forward "></i></button-->
+               
+                  </div>
+                </div>
+              </div>
+                </div>
+            </div>
+            <hr>
+            <p style="text-align: justify;">A few of the functional requirements have been shown here. There could be others like email notifications, error handling and so on. 
+                Similarly, one has to identify the non functional requirements also. 
+                For example, the system must remain accessible to thousands of users at a time.</p>
+            <a id="exbtn" class="btn btn-success fs-4" target="_blank" href="./exercise_index.html" role="button"  >Click Here to Go to Exercise Page</a>
+              
+        </div>
+            </div>
+
+            <!--div class="container p-2 ">
+              <hr>
+            <footer class="text-white ">
+                <div class=" text-primary fs-5 ">
+                  Copyright  © 2023  IIT Kharagpur,
+                  <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a>
+                </div>
+                </footer>
+                </div-->
+                <!--div class="container-fluid p-1 ">
+                  <hr>
+                <footer class="text-white text-center" >
+                  
+                    <p class="text-primary fs-5 text-center" >  Copyright  © 2023  IIT Kharagpur, <a class="text-primary fs-5 text-center " href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a></p>
+                 
+                </footer>
+                <hr>
+                </div-->
+                <!--script src="https://cdn.jsdelivr.net/npm/jquery.marker-animation/build/index.min.js"></script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/simulation.js"></script>
+    
+</body>
+</html>
